@@ -65,7 +65,22 @@ class Engine
      */
     public function __construct()
     {
-        $this->path    = getenv('PHANTOMJS_BIN') ?: 'bin/phantomjs';
+        $this->path    = getenv('PHANTOMJS_BIN');
+
+        if (!$this->path) {
+            $ps = explode(PATH_SEPARATOR,getenv('PATH'));
+            foreach ($ps as $p) {
+                if (file_exists($p . DIRECTORY_SEPARATOR . 'phantomjs')) {
+                    $this->path = $p . DIRECTORY_SEPARATOR . 'phantomjs'; 
+                    break;
+                }
+            }
+        }
+
+        if (!$this->path) {
+            $this->path = 'bin/phantomjs';
+        }
+
         $this->options = array();
 
         $this->debug = false;
