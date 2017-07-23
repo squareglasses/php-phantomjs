@@ -14,6 +14,7 @@ Changes in this Fork
 - Twig 2.x
 - PHPUnit 6
 - PhantomJS Cookie Timezone fixes
+- Added a custom env `PHANTOMJS_BIN` for overriding `bin/phantomjs`
 
 Feature List
 ---------------------
