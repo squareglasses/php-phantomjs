@@ -16,6 +16,13 @@ Changes in this Fork
 - PhantomJS Cookie Timezone fixes
 - Added a custom env `PHANTOMJS_BIN` for overriding `bin/phantomjs`
 
+Install
+--------------------
+
+```
+composer require c9s/php-phantomjs:dev-master
+```
+
 Feature List
 ---------------------
 
