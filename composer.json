@@ -11,7 +11,7 @@
             "homepage": "http://jonnyw.me/"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "replace": {
         "jonnyw/php-phantomjs": "*"
     },
