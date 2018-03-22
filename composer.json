@@ -45,11 +45,5 @@
         "post-update-cmd": [
             "PhantomInstaller\\Installer::installPhantomJS"
         ]
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/squareglasses/php-phantomjs"
-        }
-    ]
+    }
 }
